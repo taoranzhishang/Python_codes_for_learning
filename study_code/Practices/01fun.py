@@ -1,0 +1,5 @@
+print("fffffff   u       u       nn         nn".upper())
+print("ff        u       u       nnn        nn".upper())
+print("fffffff   u       u       nn   n     nn".upper())
+print("ff         u     u        nn     n   nn".upper())
+print("ff           uuu          nn        nnn".upper())

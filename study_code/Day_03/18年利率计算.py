@@ -1,0 +1,5 @@
+last_money = eval(input("请输入最终数额："))
+month_rate = eval(input("请输入月利率："))
+years = eval(input("请输入年限："))
+begin_money = last_money / (1 + month_rate) ** (years * 12)
+print("你需要存入：", begin_money, '元')

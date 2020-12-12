@@ -1,4 +1,4 @@
-set1 = set()  # k空集合
+set1 = set()  # 空集合
 set2 = set((1, 2, 3, 4, 5, 1))  # tuple转set
 set3 = set([1, 2, 3, 4, 5, 1])  # list转set
 set4 = set({1: 2, 'a': 3})  # dict转set

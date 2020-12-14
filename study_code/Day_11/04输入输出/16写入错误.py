@@ -1,13 +1,15 @@
 # -*-coding:utf-8-*-
 # @Author:  陶然至上
 # @Email:   taoranzhishang@hotmail.com
-# @File:    12文本写入中文.py
-# @Time:    2020/12/13 1:45
+# @File:    16写入错误.py
+# @Time:    2020/12/13 22:54
 # @Software:PyCharm
 """
-写入中文按照utf-8，2进制写入
+不同的编码会导致编码失败
+编码失败：某个编码的字符其他编码方式没有
+编码忽略略错误，有的编码重合度高也能解码，有的是由完全乱码
 """
-file = open(r"D:\code\py\study_code\Day_11\04输入输出\poetry.txt", "wb")  # 写入中文使用wb
+file = open(r"D:\code\py\study_code\Day_11\04输入输出\poetry1.txt", "wb")
 myStr = """
 一位python程序员的情书
 我能抽象出整个世界．．．
@@ -38,7 +40,8 @@ myStr = """
 在这无尽的黑夜中 ，终于体验到你对我爱的回调...
 这个程序是怎么实现的呢？哪位python牛人解析下
 """
-
-file.write(myStr.encode("utf-8"))  # myStr自动编码,对象.encode()设置编码方式为utf-8
-print(type(myStr.encode("utf-8")))  # <class 'bytes'>
+"""
+python默认utf-8编码，gbk强行编码，
+"""
+file.write(myStr.encode("gbk"))  # 不ignore可能会编码错误，若存在utf-8有gbk没有的字符就会报错
 file.close()

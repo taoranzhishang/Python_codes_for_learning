@@ -15,7 +15,7 @@ import funcTest
 funcTest.go()
 """
 """
-from funcTest import go#from路径导入，调用函数时可以直接用
+from funcTest import go#from路径导入，调用函数时可以直接用，同命的后面的覆盖前面导入的
 go()
 """
 """

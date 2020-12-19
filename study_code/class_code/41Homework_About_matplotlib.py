@@ -13,8 +13,8 @@
 import numpy as np  # 导入numpy模块，并重新命名为np
 import matplotlib.pyplot as plt  # 导入matplotlib模块中的子模块pyplot，并重新命名为plt
 
-plt.rcParams["font.sans-serif"] = ["SimHei"]  # 设置显示中文字体，此处为：黑体
-plt.rcParams["axes.unicode_minus"] = False  # 设置正常显示符号
+plt.rcParams["font.sans-serif"] = ["SimHei"]  # 设置rc参数显示中文字体，此处为：黑体
+plt.rcParams["axes.unicode_minus"] = False  # 设置rc参数正常显示符号
 
 data = np.arange(0, 1.1, 0.01)  # 创建一个从0到1.1步长为0.01的一维数组data
 plt.title("曲线")  # 为图表添加标题为：曲线

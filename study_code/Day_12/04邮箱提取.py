@@ -13,7 +13,7 @@ save_file=open(save_filepath,"wb")
 
 for data in file:#遍历数据
     #print(data)#以"wb"方式打开，结果为二进制
-    data=data.decode("utf-8","ignore")#对数据解码，方式为utf-8
+    data=data.decode("utf-8","ignore")#对数据解码，方式为utf-8，忽略错误
     filestr=data.split(" # ")#切割每一行
     #print(filestr[2],end='')
     save_file.write(filestr[2].encode("utf-8"))#将邮箱数据写入文件，编码方式utf-8

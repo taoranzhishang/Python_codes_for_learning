@@ -1,9 +1,10 @@
 mylist = [1, 2, 3, 4, 5]
 myset = {1, 2, 1, 1, 1, 1, 1, 2, 3, 5, 4}  # 重复只算一个,自动升序排列
-
+set1 = {1}  # set类型
 print(mylist)
 print(myset)
 print(type(myset))  # set类型
+print(type(set1))
 
 set1 = {1, 2, 3}
 set2 = {3, 4, 5}

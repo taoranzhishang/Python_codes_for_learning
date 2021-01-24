@@ -11,6 +11,7 @@ num1 = 3.145656555
 # print('{:.4f}'.format(num1))
 
 
-print(words.isdecimal())
-
-print(format(num1,"<,.5f"))
+# print(words.isdecimal())
+#
+# print(format(num1,"<,.5f"))
+print("{:>20}{}".format(words,"hello China"))

@@ -6,7 +6,7 @@ num1 = 1.0
 print(type(num1))
 num1 = int(num1)  # 实型转换为int型
 print(type(num1))
-str = "1.0"  # int不能转换字符串
+str = "1.0"  # 字符串本身是字符int不能转换
 # str1="1"
 str1 = "num"
 print(type(str))

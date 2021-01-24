@@ -13,6 +13,6 @@ t.write("point 2:" + str(x2) + ',' + str(y2))
 
 t.penup()
 t.goto((x1 + x2) / 2, (y1 + y2) / 2)
-t.write("distance=" + str(distance))#turtle.wtite()只能打印字符串
+t.write("distance=" + str(distance))  # turtle.write()只能打印字符串
 
 t.exitonclick()

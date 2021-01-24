@@ -14,7 +14,7 @@ print(set([1, 2, 3, 4]))  # list转set
 print(repr(1 + 2 * 3))  # 计算一个表达式，运算
 print(repr("1+2*3"))  # 计算一个表达式，字符串
 
-# print(int("16",2))
+print(int("16",2))
 print(bin(16))  # 2进制
 
 print(int("16", 8))  # 8进制

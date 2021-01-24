@@ -11,3 +11,4 @@ num1, num2, num3 = fun1()
 
 print(num)
 print(num1, num2, num3)
+print(fun1(),type(fun1()))# 返回值是tuple

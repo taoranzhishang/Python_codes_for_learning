@@ -13,9 +13,10 @@ if a == 0:
         print("x=", c / b)
 else:
     dt = b ** 2 - 4 * a * c
+    print("dt=%d"%dt)
     if dt == 0:
         print("x=", (-1 * b + dt ** 0.5) / (2 * a))
     elif dt > 0:
         print("x1=", (-1 * b + dt ** 0.5) / (2 * a), "\n", "x2=", (-1 * b - dt ** 0.5) / (2 * b))
     else:
-        pass
+        print("dt<0,方程无实根")

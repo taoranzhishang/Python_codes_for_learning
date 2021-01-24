@@ -18,5 +18,5 @@ print(mytuple[:])
 tuple1 = ()  # tuple类型
 tuple2 = (1,)  # tuple类型
 tuple3 = (1)  # int类型
-
-print(type(tuple1), type(tuple2), type(tuple3))
+tuple4 = 1,  # tuple类型
+print(type(tuple1), type(tuple2), type(tuple3), type(tuple4))

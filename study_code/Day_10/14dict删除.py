@@ -8,3 +8,4 @@ mydict.clear()  # 清空，仍可以引用，
 print(mydict)
 
 del mydict  # 删除全部，内存回收，引用报错
+# print(mydict)

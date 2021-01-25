@@ -13,5 +13,5 @@ print(next(it))
 print(next(it))
 
 it = iter(mylist)  # 自动记录索引，tuple，list，set，dict通用
-for i in it:
+for i in it:  # 遍历迭代
     print(i)

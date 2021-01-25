@@ -2,10 +2,10 @@ set1 = set()  # 空集合
 set2 = set((1, 2, 3, 4, 5, 1))  # tuple转set
 set3 = set([1, 2, 3, 4, 5, 1])  # list转set
 set4 = set({1: 2, 'a': 3})  # dict转set
-set5 = set("abcdef")  # 字符串转set，乱序
+set5 = set("abcdef")  # 字符串转set，乱序，每个字符为一个元素
 set6 = {1, 2, 3, 4, 5}  # 标准风格
-set0 = {}  # 空集合
-
+set0 = {}  # dict类型,空字典
+print(set0, type(set0))
 print(set1, type(set1))  # set() <class 'set'>  空集合
 print(set2, type(set2))  # {1, 2, 3, 4, 5} <class 'set'>    去除重复
 print(set3, type(set3))  # {1, 2, 3, 4, 5} <class 'set'>    去除重复

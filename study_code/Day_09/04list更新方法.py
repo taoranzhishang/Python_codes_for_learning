@@ -1,10 +1,9 @@
-mylist=[1,2,3,4,5,6]
+mylist = [1, 2, 3, 4, 5, 6]
 print(mylist)
 
-
-for i in range(len(mylist)):#修改列表必须用索引
-    if mylist[i]==2:
-        mylist[i]=-2
+for i in range(len(mylist)):  # 修改列表必须用索引
+    if mylist[i] == 2:
+        mylist[i] = -2
         print(mylist[i])
 print(mylist)
 '''

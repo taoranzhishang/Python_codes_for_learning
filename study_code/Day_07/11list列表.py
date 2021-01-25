@@ -12,3 +12,6 @@ print(mylist[:6])  # 0到5位
 print(mylist[4:])  # 4到末尾
 print(mylist * 2)
 print(mylist + mylist[3:7])  # 截取，相加
+ls = []
+ls1 = [1]
+print(type(ls), type(ls1))

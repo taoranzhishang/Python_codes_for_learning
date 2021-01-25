@@ -1,7 +1,8 @@
 # 不同的编码格式，大小不同，，内容不同
+print(bytes('a',"utf-8"))
 a = bytes(1)  # bytes转换为二进制编码，占1字节
 print(a)  # \x 16进制，1byte，8bite
-b = bytes("你好天朝", "utf-8")  # 准换成二进制编码，utf-8编码格式
+b = bytes("你好天朝", "utf-8")  # 转换成二进制编码，utf-8编码格式
 print(b)
 c = bytes("你好天朝", "gbk")  # gbk编码格式
 print(c)

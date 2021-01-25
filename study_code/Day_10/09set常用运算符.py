@@ -13,8 +13,8 @@ print(set1 ^ set2)  # 并集-交集：两个集合独有的
 
 print(set1 == set3)  # True，判断两个集合元素是否相等，无序
 
-print(set4.difference(set5))  # 找出set4集合对于sset5集合中有差异的部分，{8, 7}
-print(set5.difference(set4))  # 找出set5集合对于sset4集合中有差异的部分，{6}
+print(set4.difference(set5))  # 找出set4集合对于set5集合中有差异的部分，{8, 7}，前有后没有
+print(set5.difference(set4))  # 找出set5集合对于set4集合中有差异的部分，{6}，前有后没有
 
 print(1 in set1)  # True 用于判断元素是否在结构中
 print(10 in set1)  # False，元素不在结构中

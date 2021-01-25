@@ -10,7 +10,7 @@ print(myList1)
 myList2 = [x + 1 for x in range(1, 101, 2) if x < 50]  # 一般形式+判断
 print(myList2)
 
-myList3 = [[x, x + 1, x * x] for x in range(1, 101, 2) if x > 50]  # 生成一个列表嵌套一个列表，二位列表，判断限制的是range()生成的列表
+myList3 = [[x, x + 1, x * x] for x in range(1, 101, 2) if x > 50]  # 生成一个列表嵌套一个列表，二维列表，判断限制的是range()生成的列表
 print(myList3)
 
 myList4 = [x + y for x in range(10) for y in range(10)]  # 嵌套循环，总共100次，内层循环一次外层再循环

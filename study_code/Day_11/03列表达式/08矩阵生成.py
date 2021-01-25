@@ -10,7 +10,7 @@ for i in range(10):  # i控制行数
     """
     生成一个10嵌套10个元素的列表
     """
-    myList.append([i * 10 + j for j in range(10)])  # j控制列数
+    myList.append([i * 10 + j for j in range(10)])  # j控制列数，列表生成式生成一个列表再append到myList
 print(myList)
 
 for i in myList:  # 输出一个元素为一个10个元素的列表
@@ -18,7 +18,7 @@ for i in myList:  # 输出一个元素为一个10个元素的列表
 
 myList2 = []
 for l in range(0, 8, 7):  # 控制步长实现取值需求
-    myList2.append([l + j for j in range(1, 8)])
+    myList2.append([l + j for j in range(1, 8)])  # myList2只有2个列表元素
 
 for l in myList2:
     print(l)

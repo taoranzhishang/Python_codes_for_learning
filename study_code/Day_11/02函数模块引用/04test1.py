@@ -9,6 +9,8 @@ import 02函数模块引用.funcTest
 
 02函数模块引用.funcTest.go()
 """
+# 多级目录，导入环境变量
+
 """
 import funcTest
 

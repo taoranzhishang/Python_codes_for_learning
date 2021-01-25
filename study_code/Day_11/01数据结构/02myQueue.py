@@ -13,11 +13,13 @@
 
 import collections  # 数据结构集合
 
-queue = collections.deque([1, 2, 3, 4, 5])
+queue = collections.deque([1, 2, 3, 4, 5])  # deque双向队列，可以快速在左右增删元素
 print(queue)
-queue.append(6)
+queue.append(6)  # 右侧增加元素
 print(queue)
-queue.append(7)
+queue.appendleft(7)  # 左侧增加元素
+print(queue)
+print(queue.pop())  # 右侧弹出
 print(queue)
 print(queue.popleft())  # 获取所弹出queue左边的第一个，打印
 print(queue)

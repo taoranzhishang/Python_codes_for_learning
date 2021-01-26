@@ -36,11 +36,11 @@ def fun2():
 
 fun2()
 print(type(fun2))  # <class 'function'>
-print(type(fun2()))  # <class 'generator'>，先调用函数打印1，2，3，加上yield的返回值是生成器
+print(type(fun2()))  # <class 'generator'>加上yield的返回值是生成器，不会打印，在next时才会执行函数内部语句
 
 num = fun2()  # 调用函数，赋值给num，分段返回，一个yield返回一次，生成器只能用next调用
 print(type(num))  # <class 'generator'>
-print(next(num))  # 打印返回值-1
+print(next(num))  # 打印返回值-1，调用时先执行了函数内部的打印语句再返回
 print(next(num))  # 打印返回值-2
 print(next(num))  # 打印返回值-3
 # print(next(num))#超过范围，报错

@@ -14,15 +14,16 @@ data = 3 / 7
 print(str(data))  # 0.42857142857142855#一般数据二者相同
 print(repr(data))  # 0.42857142857142855
 """
-repr可处理任何类型的数据，可标识类型
-str不能标识类型，统一转换为str
+str与repr相同之处是将数据准换为str
+repr可处理任何类型的数据，转换为字符串类型，可标识类型，仍旧保留原来的样子，\n不变，''不变
+str不能标识类型，原数据都会改变，使用时统一转换为str
 """
 print(repr(str))  # <class 'str'>
 print(repr(int))  # <class 'int'>
-print(repr('1'))  # '1'
-print(repr(1))  # 1
-print(str('1'))  # 输出1，不能识别类型
-print(str(1))  # 输出1，不能识别类型
+print(repr('1'), type(repr('1')))  # '1' <class 'str'>
+print(repr(1), type(repr(1)))  # 1 <class 'str'>
+print(str('1'), type(str('1')))  # 输出1，不能识别类型 <class 'str'>
+print(str(1), type(str(1)))  # 输出1，不能识别类型 <class 'str'>
 
 print('1', '2')
 print('1'.rjust(10), '2')  # rjust调整字符串左边宽度

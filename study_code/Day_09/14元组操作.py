@@ -9,7 +9,7 @@ print(tuple1[2:-2])  # 2到-3
 print(tuple1 + tuple2)  # 拼接，多合一
 print(tuple2 * 4)  # 复制4次
 
-# del tupel1[1]  #不能清除元素
+# del tuple1[1]  #不能清除元素
 del tuple2  # 清除内存，无法再次调用
 # print(tuple2)
 

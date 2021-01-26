@@ -11,7 +11,8 @@ print(strset)
 strset.update("12345abcd")  # 将字符串打碎插入到strset里，去除重复归并
 print(strset)
 
-# myset.update(8)  #单个字符不可以插入，tuple、list、字符串可以
+# myset.update(8)  # 单个数值不可以插入，tuple、list、字符串可以
 myset.update([8])  # 插入list
 myset.update((9,))  # 插入tuple
+myset.update('8')  # 单个字符可以插入
 print(myset)

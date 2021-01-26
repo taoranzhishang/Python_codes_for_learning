@@ -6,7 +6,7 @@ print(tuple1[2:])  # 2到最后
 print(tuple1[:-2])  # 0到-3
 print(tuple1[2:-2])  # 2到-3
 
-print(tuple1 + tuple2)  # 拼接
+print(tuple1 + tuple2)  # 拼接，多合一
 print(tuple2 * 4)  # 复制4次
 
 # del tupel1[1]  #不能清除元素

@@ -38,7 +38,9 @@ myStr = """
 在这无尽的黑夜中 ，终于体验到你对我爱的回调...
 这个程序是怎么实现的呢？哪位python牛人解析下
 """
-
+"""
+write()可以指定编码方式，read()不可以，print()可以指定编码方式
+"""
 file.write(myStr.encode("utf-8"))  # myStr自动编码,对象.encode()设置编码方式为utf-8
 print(type(myStr.encode("utf-8")))  # <class 'bytes'>
 file.close()

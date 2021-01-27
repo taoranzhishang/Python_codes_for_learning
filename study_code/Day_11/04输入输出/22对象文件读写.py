@@ -14,7 +14,7 @@ import pickle
 """
 myList = [[1, 2, 3, 4, 5, 6], ["abc", "xyz", "你好天朝"]]
 file = open(r"D:\code\py\study_code\Day_11\04输入输出\myList.bin", "wb")
-pickle.dump(myList, file)  # 保存myLIst数据到file文件
+pickle.dump(myList, file)  # 内存数据写入到文件，保存myLIst数据到file文件
 file.close()
 
 """
@@ -22,5 +22,5 @@ file.close()
 """
 # newList=[]
 newFile = open(r"D:\code\py\study_code\Day_11\04输入输出\myList.bin", "rb")
-newList = pickle.load(newFile)  # 读取文件到newList
+newList = pickle.load(newFile)  # 对象文件加载到内存，读取文件到newList
 print(newList)

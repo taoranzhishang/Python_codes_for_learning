@@ -15,12 +15,11 @@ class complex:
     #     print(self.y, num)
     #     return complex(self.x + num, self.y + num)  # 加法的返回值
     def __add__(self, other):
-        if type(self)==type(other):#判断类型，重载complex+complex
+        if type(self) == type(other):  # 判断类型，重载complex+complex
             print(other.x, other.y)
             return complex(self.x + other.x, self.y + other.y)
-        if type(other)==type(10):#判断类型，重载complex+int
+        if type(other) == type(10):  # 判断类型，重载complex+int
             return complex(self.x + other, self.y + other)
-
 
 
 cl1 = complex(1, 2)
@@ -32,7 +31,7 @@ cl2.show()
 # cl4 = cl1 + 10#只用了第二个add,但是可以运行,可以重新解释
 # cl4.show()
 
-cl5=cl1+cl2
-cl6=cl1+10
+cl5 = cl1 + cl2
+cl6 = cl1 + 10
 cl5.show()
 cl6.show()

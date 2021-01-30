@@ -7,7 +7,7 @@ class LazyPeople:
     类中属性是独立的，方法是共享的，调用方法要传递self（实例化的对象用self表示）
     """
 
-    def habit1(self):  # self用于区分谁在调用，相当于实例化对象时的对象，二者地址相同
+    def habit1(self):  # self用于区分谁在调用，相当于实例化对象的地址，二者地址相同
         # self.name1 = "实例属性"  # 实例属性，其它方法可以使用，跨方法使用
         # name2 = "静态属性"  # 静态属性，相当于局部变量，其它方法不能使用，实例化对象不可以使用
         print(self.name, "love sleep")  # self调用属性

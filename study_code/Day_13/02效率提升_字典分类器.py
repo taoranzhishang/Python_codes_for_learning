@@ -1,5 +1,4 @@
 import codecs
-import pickle
 
 filepath = r"D:\code\py\study_code\Day_12\开房数据清洗\qDocument_18.txt"
 file = codecs.open(filepath, "rb", "utf-8", "ignore")  # 按照指定编码
@@ -3482,7 +3481,7 @@ for key in myDict:
 
 print("create")
 
-for line in myList:
+for line in myList:  # 遍历结果为键值对组成的tuple
     lineList = line.split(",")  # 字符串切割
     areaCode = lineList[1][0:6]  # 取出6个字符
     # myDict[areaCode]  新疆维吾尔族自治区阿勒泰地区福海县

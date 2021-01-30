@@ -18,7 +18,7 @@ cl2.y = 100
 cl1.show()  # 100 1
 cl2.show()  # 100 1
 cl3.show()  # 1 100
-print(id(cl1), id(cl2), id(id(cl3)))  # 浅复制地址相同,深复制地址不同
+print(id(cl1), id(cl2), id(cl3))  # 浅复制地址相同,深复制地址不同
 """
 节约内存使用浅拷贝
 保证数据安全深拷贝

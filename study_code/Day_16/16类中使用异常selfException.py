@@ -6,9 +6,9 @@ class Box:
             raise 2  # 报错，提示2，无法处理2
         if z > 10 or z < 2:
             raise 3
-        self.x = x
-        self.y = y
-        self.z = z
+        # self.x = x
+        # self.y = y
+        # self.z = z
 
 
 try:

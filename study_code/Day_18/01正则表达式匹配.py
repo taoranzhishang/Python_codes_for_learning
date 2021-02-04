@@ -35,6 +35,9 @@ print(matchStr.group(0))  # colder is handsome isn't ugly  整体
 print(matchStr.group(1))  # colder  第1个正则表达式
 print(matchStr.group(2))  # handsome isn't ugly  第2个正则表达式
 
+"""
+切割
+"""
 Str1 = "12345566700----colder1030"
 matchStr1 = re.match(r"(.*)----(.*)", Str1)
 print(matchStr1)  # <re.Match object; span=(0, 25), match='12345566700----colder1030'>

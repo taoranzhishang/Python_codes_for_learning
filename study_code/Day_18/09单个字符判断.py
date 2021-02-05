@@ -7,7 +7,7 @@ import re
 \D 非数字
 \s 空白字符，空格，\t
 \S 非空白字符
-\w 单词字符，字母大小写、数字
+\w 单词字符，字母大小写、数字、下划线
 \W 非单词字符
 """
 regex1 = re.compile(".", re.IGNORECASE)

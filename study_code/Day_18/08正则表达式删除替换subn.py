@@ -1,4 +1,5 @@
 import re
+
 """
 re.subn的返回值为tuple，替换后结果和次数统计
 re.sub的返回值为str，只有替换后结果，没有次数统计
@@ -22,5 +23,5 @@ print(str6)  # ('abc abc abc abc abc abc ', 6)
 
 str7 = "123 321 4562415 812479 212 33 "
 str8 = re.sub("\\d+", "abc", str7)
-print(type(str8))#<class 'str'> 返回一个str
+print(type(str8))  # <class 'str'> 返回一个str
 print(str8)  # abc abc abc abc abc abc

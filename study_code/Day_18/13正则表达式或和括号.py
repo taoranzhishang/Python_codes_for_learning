@@ -31,3 +31,15 @@ if s3 is not None:
     print(s3.group())  # not found
 else:
     print("not found")
+
+s4 = re.search(r"(abc){2}", "abcabc")  # abc匹配2次
+print(s4)  # <re.Match object; span=(0, 6), match='abcabc'>
+
+s5 = re.search(r"(abc|xyz){2}", "abcxyz")  # abc或xyz任意匹配2次，这里各匹配
+print(s5)  # <re.Match object; span=(0, 6), match='abcxyz'>
+
+s6 = re.search(r"(abc|xyz){2}", "abcabc")  # abc或xyz任意匹配2次，这里abc匹配2次
+print(s6)  # <re.Match object; span=(0, 6), match='abcabc'>
+
+s7 = re.search(r"(abc|xyz){2}", "abcxya")  # abc或xyz任意匹配2次，abc只匹配一次，xya不匹配
+print(s7)  # None

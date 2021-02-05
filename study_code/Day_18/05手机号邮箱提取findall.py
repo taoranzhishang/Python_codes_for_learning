@@ -36,6 +36,6 @@ print(type(findPhoNum))
 """
 复杂的表达式必须预编译
 """
-compFind = re.compile("([A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4})", re.IGNORECASE)#忽略异常
+compFind = re.compile("([A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4})", re.IGNORECASE)  # 忽略异常
 findEmail = compFind.findall(emailStr)
 print(findEmail)

@@ -1,6 +1,6 @@
 import re
 
-QQStr="""
+QQStr = """
 124528	男	14年	2012年5月以前	路人(0)	2017/02/21
 2
 顺便签约客服
@@ -23,7 +23,7 @@ QQStr="""
 
 """
 
-searchObj=re.search("[1-9]\\d{4,10}",QQStr)#只返回第一个符合的
+searchObj = re.search("[1-9]\\d{4,10}", QQStr)  # 只返回第一个符合的
 print(searchObj)
 print(searchObj.group())
 print(searchObj.group(0))

@@ -52,7 +52,7 @@ print(regex7.match('a'))  # <re.Match object; span=(0, 1), match='a'>
 
 """
 [0-9][a-z] 第一个字符0-9，第二个小写字母，匹配两个
-[][]以对中括号代表一个字符
+[][]1对中括号代表一个字符
 """
 regex8 = re.compile("[0-9][a-z]", re.IGNORECASE)
 print(regex8.match('9'))  # None

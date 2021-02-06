@@ -27,7 +27,7 @@ else:
     print("not found")
 
 # s3 = re.search("abc(abc){2,4}", "abcabcabc")  # abcabcabc
-s3 = re.search("abc(abc){2,4}", "abcabcabc")  # 括号内匹配2-4次，低于2次不算，高于4次算4次
+s3 = re.search("abc(abc){2,4}", "abcabc")  # 括号内匹配2-4次，低于2次不算，高于4次算4次
 if s3 is not None:
     print(s3.group())
 else:

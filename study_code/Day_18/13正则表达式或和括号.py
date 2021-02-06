@@ -33,14 +33,18 @@ if s3 is not None:
 else:
     print("not found")  # not found
 
-s4 = re.search(r"(abc){2}", "abcabc")  # abc匹配2次
+"""
+右表达式与左边的任意一个或两个都匹配，次数满足算匹配
+"""
+s4 = re.search(r"(abc){2}", "abcabc")  # abc匹配2次，abc匹配2次
 print(s4)  # <re.Match object; span=(0, 6), match='abcabc'>
 
 s5 = re.search(r"(abc|xyz){2}", "abcxyz")  # abc或xyz任意匹配2次，这里各匹配
 print(s5)  # <re.Match object; span=(0, 6), match='abcxyz'>
 
-s6 = re.search(r"(abc|xyz){2}", "abcabc")  # abc或xyz任意匹配2次，这里abc匹配2次
-print(s6)  # <re.Match object; span=(0, 6), match='abcabc'>
+s6 = re.search(r"(abc|xyz){2}", "xyzxyz")  # abc或xyz任意匹配2次，这里xyz匹配2次
+print(s6)  # <re.Match object; span=(0, 6), match='xyzxyz'>
 
+# s7 = re.search(r"(abc|xyz){1,2}", "abcxya")  # <re.Match object; span=(0, 3), match='abc'>
 s7 = re.search(r"(abc|xyz){2}", "abcxya")  # abc或xyz任意匹配2次，abc只匹配一次，xya不匹配
 print(s7)  # None

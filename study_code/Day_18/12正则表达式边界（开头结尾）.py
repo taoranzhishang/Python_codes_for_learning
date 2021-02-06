@@ -73,22 +73,26 @@ else:
     print("not found")
 
 """
-\b…… 字符串内部，先匹配单词字符在匹配非单词字符，必须转义
---> ……是\w与\W任意两个中间的部分
+\b…… 必须转义
+\b 是正则表达式规定的一个特殊代码（好吧，某些人叫它元字符，metacharacter），代表着单词的开头或结尾，也就是单词的分界处。
+虽然通常英文的单词是由空格，标点符号或者换行来分隔的，但是\b并不匹配这些单词分隔字符中的任何一个，它只匹配一个位置。
+\b 匹配这样的位置：它的前一个字符和后一个字符不全是(一个是,一个不是或不存在) \w。
 """
 # s5=re.search(r"\bthe"," the those three")  # the
-# s5=re.search(r"\bthe"," athe those three")  # the
-s5 = re.search("\\bthe", "the those three")  # 与上面不同，\b须转义
+# s5=re.search(r"\bthe","athe those three")  # not found
+# s5 = re.search("\\bthe", "athea those three")# not found
+s5 = re.search("\\bthe", "thea those three")
 if s5 is not None:
     print(s5.group())  # the
 else:
     print("not found")
 
 """
-\B…… 全部不匹配，可以不转义
-待验证：……的两边不能是单词字符和非单词字符
+\B…… 可以不转义
+\B 匹配这样的位置：它的前一个字符和后一个字符全是(一个是,一个不是或不存在) \w。
 """
-s5 = re.search("\Bthe", "the those three")  # 与上面不同，\b须转义
+# s5 = re.search("\Bthe", "athea those three")  # the
+s5 = re.search("\Bthe", "the those three")
 if s5 is not None:
     print(s5.group())  # not found
 else:

@@ -26,11 +26,12 @@ if s3 is not None:
 else:
     print("not found")
 
-s3 = re.search("abc(abc){2,4}", "abcabc")  # 括号内匹配2-4次，低于2次不算，高于4次算4次
+# s3 = re.search("abc(abc){2,4}", "abcabcabc")  # abcabcabc
+s3 = re.search("abc(abc){2,4}", "abcabcabc")  # 括号内匹配2-4次，低于2次不算，高于4次算4次
 if s3 is not None:
-    print(s3.group())  # not found
+    print(s3.group())
 else:
-    print("not found")
+    print("not found")  # not found
 
 s4 = re.search(r"(abc){2}", "abcabc")  # abc匹配2次
 print(s4)  # <re.Match object; span=(0, 6), match='abcabc'>

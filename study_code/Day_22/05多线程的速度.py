@@ -10,7 +10,7 @@ def go():
 
 # for  i  in range(5): #50秒
 #   go()
-for i in range(5):
+for i in range(5):  # 10秒
     _thread.start_new_thread(go, ())
 
 for i in range(10):  # 10秒

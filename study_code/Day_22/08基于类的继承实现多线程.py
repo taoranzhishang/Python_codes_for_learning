@@ -6,7 +6,7 @@ import win32api
 """
 class MyThread(threading.Thread):
     def run(self):  # 重写
-        win32api.MessageBox(0, "Your are so beautiful", "From a single dog", 0)
+        win32api.MessageBox(0, "You are so beautiful", "From a single dog", 0)
 
 
 for i in range(5):

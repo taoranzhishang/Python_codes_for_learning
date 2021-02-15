@@ -10,6 +10,7 @@ class MyThread(threading.Thread):
 threadList = []
 """
 遍历一次添加一次，然后再join()
+5个线程同时随机地执行，join()的作用没有体现
 """
 for i in range(5):
     t = MyThread()

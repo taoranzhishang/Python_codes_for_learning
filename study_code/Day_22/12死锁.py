@@ -1,6 +1,8 @@
 import threading
 import time
-
+"""
+死锁是两个锁调用时互相锁住没有解锁，导致下一个锁锁不住都在等待，需要调用完后解锁
+"""
 boyMutex = threading.Lock()  # 创建锁
 girlMutex = threading.Lock()
 

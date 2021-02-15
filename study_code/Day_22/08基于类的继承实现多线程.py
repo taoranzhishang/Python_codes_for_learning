@@ -3,6 +3,7 @@ import win32api
 
 """
 基于类实现多线程，遍历一次实例化一次，启动一次
+5个线程同时随机地执行
 """
 class MyThread(threading.Thread):
     def run(self):  # 重写

@@ -1,4 +1,11 @@
 # Python_codes_for_learning
-从0到1，适合初学者，陆续更新
-特点：详细、有趣
-缺点：不规范,很乱
+Python basic syntax 
+Regular expression  
+Web crawler  
+Network programming, WiFi, Server  
+Object-Oriented Programming  
+Multithreading  
+Multi-Progress  
+Coroutine  
+Office automation  
+Database  
